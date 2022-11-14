@@ -781,9 +781,7 @@ header {
 .submit-btn:focus {
   background-color: var(--hero-btn-background);
 }
-.submit-btn:focus-visible {
-  outline: 1px solid var(--text-color);
-}
+
 /* STYLES FOR PORTFOLIO.HTML */
 
 /* FILTERS */
