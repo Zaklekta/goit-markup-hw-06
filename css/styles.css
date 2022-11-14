@@ -725,6 +725,9 @@ header {
   cursor: pointer;
   appearance: none;
 }
+.form-checkbox:focus-visible + .form-checkbox-icon {
+  outline: 1px solid var(--accent-color);
+}
 .form-checkbox-icon {
   display: block;
   width: 16px;
@@ -733,7 +736,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: contain;
+  box-sizing: border-box;
+
   transition: background-image var(--transition-general);
 }
 .form-checkbox:checked + .form-checkbox-icon {
@@ -751,6 +755,9 @@ header {
 .form-agreement-link {
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+.form-agreement-link:focus-visible {
+  outline: 1px solid var(--accent-color);
 }
 
 .submit-btn {
@@ -774,7 +781,9 @@ header {
 .submit-btn:focus {
   background-color: var(--hero-btn-background);
 }
-
+.submit-btn:focus-visible {
+  outline: 1px solid var(--text-color);
+}
 /* STYLES FOR PORTFOLIO.HTML */
 
 /* FILTERS */
